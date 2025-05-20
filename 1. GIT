@@ -1,4 +1,4 @@
-DAY-01: 12-08-2023
+DAY-01:
 INTRO, STAGES, HISTORY COMMANDS
 
 GIT: GLOBAL INFORMATION TRACKER
@@ -45,7 +45,7 @@ git commit -m "v-1" index.html: to store the index.html
 git log: to show the commits
 
 
-DAY-02: 14-02-2023
+DAY-02:
 
 
 APP: a group of services.
@@ -129,7 +129,7 @@ HISTORY:
    56  history
 
 ======================================
-DAY-03: 16-08-2023
+DAY-03:
 
 
 GIT BRANCHES:
