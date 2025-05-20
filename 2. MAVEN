@@ -26,7 +26,7 @@ yum install java-1.8.0-openjdk maven git -y
 git --version 
 mvn --version
 
-git clone https://github.com/devopsbyraham/jenkins-java-project.git
+git clone https://github.com/Venkatareddy1714/jenkins-java-project123.git
 cd jenkins-java-project.git
 
 
@@ -64,7 +64,7 @@ HISTORY:
   1  yum install java-1.8.0-openjdk maven git -y
     2  git --version
     3  mvn --version
-    4  git clone https://github.com/devopsbyraham/jenkins-java-project.git
+    4  git clone https://github.com/Venkatareddy1714/jenkins-java-project123.git
     5  ll
     6  cd  jenkins-java-project/
     7  ll'
