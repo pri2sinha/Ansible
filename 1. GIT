@@ -67,8 +67,8 @@ git log --oneline -2	: shows last 2 commits
 git show commit_id	: shows files committed to that commit_id
 
 GIT CONFIGURE:
-git config user.name "raham"
-git config user.email "raham@gmail.com"
+git config user.name "venkat"
+git config user.email "venkat@gmail.com"
 
 HISTORY:
  1  mkdir paytm
