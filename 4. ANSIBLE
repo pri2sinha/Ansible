@@ -214,6 +214,9 @@ ansible-playbook playbook1.yml
 
 ansible all -a "yum remove httpd* -y"
 
+rm -rf *
+
+
 ===========================================================
 
 TAGS: used to execute or skip a particulat task in playbook
