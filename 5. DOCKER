@@ -213,6 +213,41 @@ To run: docker build -t raham:v4 .
 docker images
 docker run -it --name cont6 raham:v4
 
+Alternative as per chatgpt:
+FROM ubuntu
+
+# Install necessary packages
+RUN apt update -y && \
+    apt install apache2 wget default-jdk -y && \
+    apt install mysql-server -y
+
+# Copy HTML and download Tomcat
+COPY index.html /tmp
+ADD http://dlcdn.apache.org/tomcat/tomcat-9/v9.0.80/bin/apache-tomcat-9.0.80.tar.gz /opt/
+
+# Extract Tomcat
+RUN cd /opt && \
+    tar -xzf apache-tomcat-9.0.80.tar.gz && \
+    rm apache-tomcat-9.0.80.tar.gz
+
+# Expose ports
+EXPOSE 80 8080
+
+# Start both Apache and Tomcat when the container runs
+CMD service apache2 start && /opt/apache-tomcat-9.0.80/bin/catalina.sh run
+---------------------------------------
+run:
+docker build -t raham:v4 .
+docker run -it --name cont6 -p 8080:8080 -p 80:80 raham:v4
+
+output:
+Visit http://<your-docker-host>:80 → Apache
+
+Visit http://<your-docker-host>:8080 → Tomcat
+
+----------------------------------------------------
+
+
 EX-5:
 
 FROM ubuntu
