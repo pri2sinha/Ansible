@@ -39,6 +39,7 @@ Registry: manages the images.
 
 ARCHITECTURE OF DOCKER:
 yum install docker -y    #client
+docker -v --------version
 systemctl start docker	 #client,Engine
 systemctl status docker
 
