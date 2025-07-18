@@ -563,7 +563,7 @@ RUN apt install apache2 -y
 COPY index.html /var/www/html
 CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
 
-INDEX.HTML: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_form_icon
+Vim INDEX.HTML: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_form_icon
 
 docker build -t movies:v1 .
 docker run -itd --name movies -p 81:80 movies:v1
@@ -738,6 +738,7 @@ systemctl status docker
 
 DOCKER MANAGER NODE:
 docker swarm init 
+docker swarm init --advertise-addr  172.31.27.173-----use this
 copy token to worker nodes
 docker node ls
 
