@@ -741,6 +741,13 @@ docker swarm init
 docker swarm init --advertise-addr  172.31.27.173-----use this
 copy token to worker nodes
 docker node ls
+docker service create --name movies --replicas 3 -p 81:80 priyankatest12/priyanka_test12
+docker service ls
+docker service inspect movies
+docker service ps movies
+docker service scale movies=10
+docker service scale movies=2
+docker service logs movies
 
 
 SERVICES:
@@ -787,6 +794,7 @@ OVERLAY NETWORK: Used to communicate containers with each other across the multi
 Note: stop before remove
 
 COMMANDS:
+docker network create mynet
 docker network create paytm
 docker network ls
 docker network inspect paytm
