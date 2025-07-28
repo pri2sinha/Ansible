@@ -222,7 +222,7 @@ TO scale deploy		:kubectl scale deploy/name-of-deploy --replicas=10 (LIFO)
 To edit deploy		:kubectl edit deploy/name-of-deploy
 to show all pod labels	:kubectl get pods --show-labels
 To delete all pods	:kubectl delete pod --all
-
+**name-of-deploy--- take from Kubectl get deploy ---the name**
 
 
 HISTORY:
